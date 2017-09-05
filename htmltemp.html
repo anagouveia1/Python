@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+body {
+    background-color: grey;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+</style>
+<title>HTML Tutorial</title>
+</head>
+
+<body>
+
+<h1>My First  CSS & JavaScript Example</h1>
+<p>This is a paragraph.</p>
+
+<p id="demo">Click the button to change the layout of this paragraph</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("demo");
+    x.style.fontSize = "25px"; 
+    x.style.color = "red"; 
+}
+</script>
+
+<button onclick="myFunction()">Click Me!</button>
+
+<p>
+%Alternatively
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!!!</button>
+</p>
+
+
+%Alternatively Separates HTML and CODE :
+
+<script src="myScript.js"></script>
+
+<h2>JavaScript Statements </h2>
+
+<p>Statements are separated by semicolons.</p>
+
+<p>The variables x, y, and z are assigned the values 5, 6, and 11.</p>
+
+<p>Then the value of z is displayed in the paragraph below:</p>
+
+<p id="demo"></p>
+
+<script>
+var x, y, z;
+x = 5;
+y = 6;
+z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+
+<p>
+<a href="https://www.w3schools.com">This is a link</a>
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+</p>
+</html>
+
+%JavaScript can change content, attributes, style, hide elements and show them.
